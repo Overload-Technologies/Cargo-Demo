@@ -3,6 +3,10 @@ local Controller_FPSController =
     currentWalkSpeed        = 1.0,
     currentRunSpeed         = 1.0,
     currentJumpStrength     = 1.0,
+    currentCameraFOV        = 1.0,
+    initialFOV              = 0.0,
+    runningFOVMultiplier    = 1.2,
+    LerpSpeedFOV            = 10,
     readyToGo               = false,
     walkSpeed               = 3.5,
     runSpeed                = 5.5,
@@ -11,7 +15,8 @@ local Controller_FPSController =
     mouseLook               = Vector2.new(180, -20),
     previousMouse           = Vector2.new(0, 0),
     firstMouse              = true,
-    camera                   = nil,
+    camera                  = nil,
+    CameraComponent         = nil,
     mouseLocked             = true,
     isGrounded              = false,
     breathScript            = nil,
@@ -24,8 +29,12 @@ local Controller_FPSController =
 
 function Controller_FPSController:OnAwake()
     self.camera = Scenes.GetCurrentScene():FindActorByName("Player Camera")
+    self.CameraComponent = self.camera:GetCamera()
     self.physicalCapsule = self.owner:GetPhysicalCapsule()
     self.ballRecall = Scenes.GetCurrentScene():FindActorByName("Recall Source"):GetBehaviour("Gameplay_BallRecall")
+
+    self.initialFOV = self.CameraComponent:GetFov()
+    self.currentCameraFOV = self.initialFOV
 end
 
 function Controller_FPSController:OnStart()
@@ -39,6 +48,7 @@ function Controller_FPSController:OnUpdate(deltaTime)
         self.currentWalkSpeed = Math.Lerp(self.currentWalkSpeed, self.walkSpeed, 0.3 * deltaTime)
         self.currentRunSpeed = Math.Lerp(self.currentRunSpeed, self.runSpeed, 0.3 * deltaTime)
         self.currentJumpStrength = Math.Lerp(self.currentJumpStrength, self.jumpStrength, 0.3 * deltaTime)
+        self:UpdateCameraFOV(deltaTime)
     end
 
     -- Toggle mouse lock with Left ALT key
@@ -182,6 +192,16 @@ function Controller_FPSController:CheckGround()
         self.isGrounded = true
     else
         self.isGrounded = false
+    end
+end
+
+function Controller_FPSController:UpdateCameraFOV(deltaTime)
+    local targetFOV = self.running and self.runAsked and self.initialFOV * self.runningFOVMultiplier or self.initialFOV
+
+    self.currentCameraFOV = Math.Lerp(self.currentCameraFOV, targetFOV, self.LerpSpeedFOV * deltaTime)
+
+    if self.CameraComponent then
+        self.CameraComponent:SetFov(self.currentCameraFOV)
     end
 end
 
