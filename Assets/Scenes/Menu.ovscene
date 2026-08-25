@@ -236,7 +236,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Managers_MenuManager</type>
+                        <type>Scripts/Managers_MenuManager.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -317,7 +317,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Managers_CameraFade</type>
+                        <type>Scripts/Managers_CameraFade.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>

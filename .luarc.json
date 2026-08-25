@@ -1,0 +1,14 @@
+{
+  "workspace.library": ["/home/adrien/Downloads/Overload-1.9-linux_x64/Data/Engine"],
+  "runtime.version": "Lua 5.4",
+  "runtime.builtin": {
+    "basic": "enable",
+    "math": "enable",
+    "string": "disable",
+    "table": "disable",
+    "io": "disable",
+    "os": "disable",
+    "package": "disable",
+    "coroutine": "disable"
+  }
+}

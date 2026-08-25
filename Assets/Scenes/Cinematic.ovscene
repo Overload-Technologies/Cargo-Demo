@@ -6,8 +6,32 @@
                 <tag></tag>
                 <active>true</active>
                 <id>3</id>
+                <guid>6901741674230117157</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>40</parent>
                 <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>0</x>
+                                <y>2</y>
+                                <z>0</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                                <w>1</w>
+                            </rotation>
+                            <scale>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </scale>
+                        </data>
+                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CAudioListener</type>
                         <data/>
@@ -33,10 +57,8 @@
                         <type>class OvCore::ECS::Components::CPostProcessStack</type>
                         <data>
                             <bloom_enabled>true</bloom_enabled>
-                            <bloom_threshold>1</bloom_threshold>
-                            <bloom_radius>1</bloom_radius>
-                            <bloom_kernel_size>6</bloom_kernel_size>
                             <bloom_intensity>0.5</bloom_intensity>
+                            <bloom_passes>6</bloom_passes>
                             <auto_exposure_enabled>true</auto_exposure_enabled>
                             <auto_exposure_center_weight_bias>0.5</auto_exposure_center_weight_bias>
                             <auto_exposure_luminance_min>-2</auto_exposure_luminance_min>
@@ -52,31 +74,10 @@
                             <fxaa_enabled>true</fxaa_enabled>
                         </data>
                     </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>0</x>
-                                <y>2</y>
-                                <z>0</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </scale>
-                        </data>
-                    </component>
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Controller_SimpleFPSController</type>
+                        <type>Scripts/Controller_SimpleFPSController.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -86,33 +87,11 @@
                 <tag></tag>
                 <active>true</active>
                 <id>4</id>
+                <guid>9625195885047469205</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>47</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>Models\Cargo\Materials\base_door.ovmat</material>
-                                <material>Models\Cargo\Materials\podlaha_albedo.ovmat</material>
-                                <material>Models\Cargo\Materials\base_ram_albedo.ovmat</material>
-                                <material>Models\Cargo\Materials\wall_albedo.ovmat</material>
-                                <material>Models\Cargo\Materials\Text_hangarA113.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CModelRenderer</type>
-                        <data>
-                            <model>Models\Cargo\Cargo.FBX</model>
-                            <frustum_behaviour>1</frustum_behaviour>
-                            <custom_bounding_sphere_position>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </custom_bounding_sphere_position>
-                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -134,10 +113,36 @@
                             </scale>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>Models\Cargo\Materials\base_door.ovmat</material>
+                                <material>Models\Cargo\Materials\podlaha_albedo.ovmat</material>
+                                <material>Models\Cargo\Materials\base_ram_albedo.ovmat</material>
+                                <material>Models\Cargo\Materials\wall_albedo.ovmat</material>
+                                <material>Models\Cargo\Materials\Text_hangarA113.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CModelRenderer</type>
+                        <data>
+                            <model>Models\Cargo\Cargo.FBX</model>
+                            <frustum_behaviour>1</frustum_behaviour>
+                            <custom_bounding_sphere_position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </custom_bounding_sphere_position>
+                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_Shake</type>
+                        <type>Scripts/Animation_Shake.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -147,6 +152,9 @@
                 <tag></tag>
                 <active>true</active>
                 <id>6</id>
+                <guid>7224762818709329272</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>47</parent>
                 <components>
                     <component>
@@ -178,22 +186,11 @@
                 <tag>WhiteLight1</tag>
                 <active>false</active>
                 <id>7</id>
+                <guid>4780449232537421655</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>9</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPointLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </color>
-                            <intensity>1</intensity>
-                            <constant>0</constant>
-                            <linear>0</linear>
-                            <quadratic>0.1</quadratic>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -215,16 +212,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Light 2</name>
-                <tag>WhiteLight1</tag>
-                <active>true</active>
-                <id>8</id>
-                <parent>9</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
@@ -239,6 +226,19 @@
                             <quadratic>0.1</quadratic>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Light 2</name>
+                <tag>WhiteLight1</tag>
+                <active>true</active>
+                <id>8</id>
+                <guid>7324682172143420178</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>9</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -260,6 +260,20 @@
                             </scale>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CPointLight</type>
+                        <data>
+                            <color>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </color>
+                            <intensity>1</intensity>
+                            <constant>0</constant>
+                            <linear>0</linear>
+                            <quadratic>0.1</quadratic>
+                        </data>
+                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -268,6 +282,9 @@
                 <tag></tag>
                 <active>false</active>
                 <id>9</id>
+                <guid>12058557120767929297</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>6</parent>
                 <components>
                     <component>
@@ -299,22 +316,11 @@
                 <tag>WhiteLight2</tag>
                 <active>true</active>
                 <id>10</id>
+                <guid>14443222750225022400</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>9</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPointLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </color>
-                            <intensity>1</intensity>
-                            <constant>0</constant>
-                            <linear>0</linear>
-                            <quadratic>0.1</quadratic>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -336,16 +342,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Light 4</name>
-                <tag>WhiteLight2</tag>
-                <active>true</active>
-                <id>11</id>
-                <parent>9</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
@@ -360,6 +356,19 @@
                             <quadratic>0.1</quadratic>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Light 4</name>
+                <tag>WhiteLight2</tag>
+                <active>true</active>
+                <id>11</id>
+                <guid>1643114412831374555</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>9</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -381,16 +390,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Light 5</name>
-                <tag>WhiteLight1</tag>
-                <active>false</active>
-                <id>12</id>
-                <parent>9</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
@@ -405,6 +404,19 @@
                             <quadratic>0.1</quadratic>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Light 5</name>
+                <tag>WhiteLight1</tag>
+                <active>false</active>
+                <id>12</id>
+                <guid>6673519245197464459</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>9</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -426,6 +438,20 @@
                             </scale>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CPointLight</type>
+                        <data>
+                            <color>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </color>
+                            <intensity>1</intensity>
+                            <constant>0</constant>
+                            <linear>0</linear>
+                            <quadratic>0.1</quadratic>
+                        </data>
+                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -434,22 +460,11 @@
                 <tag>WhiteLight2</tag>
                 <active>true</active>
                 <id>13</id>
+                <guid>12427562194500528697</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>9</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPointLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </color>
-                            <intensity>1</intensity>
-                            <constant>0</constant>
-                            <linear>0</linear>
-                            <quadratic>0.1</quadratic>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -471,16 +486,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Light 7</name>
-                <tag>WhiteLight1</tag>
-                <active>false</active>
-                <id>14</id>
-                <parent>9</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
@@ -495,6 +500,19 @@
                             <quadratic>0.1</quadratic>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Light 7</name>
+                <tag>WhiteLight1</tag>
+                <active>false</active>
+                <id>14</id>
+                <guid>7033729412984925977</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>9</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -516,6 +534,20 @@
                             </scale>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CPointLight</type>
+                        <data>
+                            <color>
+                                <x>1</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </color>
+                            <intensity>1</intensity>
+                            <constant>0</constant>
+                            <linear>0</linear>
+                            <quadratic>0.1</quadratic>
+                        </data>
+                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -524,6 +556,9 @@
                 <tag></tag>
                 <active>false</active>
                 <id>23</id>
+                <guid>17327041742462608266</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>6</parent>
                 <components>
                     <component>
@@ -555,22 +590,11 @@
                 <tag>WhiteLight2</tag>
                 <active>false</active>
                 <id>24</id>
+                <guid>9184887007179144575</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>23</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPointLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </color>
-                            <intensity>1</intensity>
-                            <constant>0</constant>
-                            <linear>0</linear>
-                            <quadratic>0.1</quadratic>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -592,16 +616,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Light 2</name>
-                <tag>WhiteLight1</tag>
-                <active>false</active>
-                <id>25</id>
-                <parent>23</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
@@ -616,6 +630,19 @@
                             <quadratic>0.1</quadratic>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Light 2</name>
+                <tag>WhiteLight1</tag>
+                <active>false</active>
+                <id>25</id>
+                <guid>7512819408482671071</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>23</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -637,16 +664,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Light 3</name>
-                <tag>WhiteLight1</tag>
-                <active>true</active>
-                <id>26</id>
-                <parent>23</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
@@ -661,6 +678,19 @@
                             <quadratic>0.1</quadratic>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Light 3</name>
+                <tag>WhiteLight1</tag>
+                <active>true</active>
+                <id>26</id>
+                <guid>4055891929864266781</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>23</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -682,16 +712,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Light 4</name>
-                <tag>WhiteLight2</tag>
-                <active>false</active>
-                <id>27</id>
-                <parent>23</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
@@ -706,6 +726,19 @@
                             <quadratic>0.1</quadratic>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Light 4</name>
+                <tag>WhiteLight2</tag>
+                <active>false</active>
+                <id>27</id>
+                <guid>5449886726773071211</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>23</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -727,16 +760,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Light 5</name>
-                <tag>WhiteLight2</tag>
-                <active>true</active>
-                <id>28</id>
-                <parent>23</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
@@ -751,6 +774,19 @@
                             <quadratic>0.1</quadratic>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Light 5</name>
+                <tag>WhiteLight2</tag>
+                <active>true</active>
+                <id>28</id>
+                <guid>13409233072912168003</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>23</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -772,6 +808,20 @@
                             </scale>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CPointLight</type>
+                        <data>
+                            <color>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </color>
+                            <intensity>1</intensity>
+                            <constant>0</constant>
+                            <linear>0</linear>
+                            <quadratic>0.1</quadratic>
+                        </data>
+                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -780,22 +830,11 @@
                 <tag>WhiteLight1</tag>
                 <active>true</active>
                 <id>29</id>
+                <guid>4151373029728498272</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>23</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPointLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </color>
-                            <intensity>1</intensity>
-                            <constant>0</constant>
-                            <linear>0</linear>
-                            <quadratic>0.1</quadratic>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -817,16 +856,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Light 7</name>
-                <tag>WhiteLight1</tag>
-                <active>false</active>
-                <id>30</id>
-                <parent>23</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
@@ -841,6 +870,19 @@
                             <quadratic>0.1</quadratic>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Light 7</name>
+                <tag>WhiteLight1</tag>
+                <active>false</active>
+                <id>30</id>
+                <guid>12083209016170986924</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>23</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -862,6 +904,20 @@
                             </scale>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CPointLight</type>
+                        <data>
+                            <color>
+                                <x>1</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </color>
+                            <intensity>1</intensity>
+                            <constant>0</constant>
+                            <linear>0</linear>
+                            <quadratic>0.1</quadratic>
+                        </data>
+                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -870,6 +926,9 @@
                 <tag></tag>
                 <active>true</active>
                 <id>31</id>
+                <guid>561157675325598819</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>6</parent>
                 <components>
                     <component>
@@ -901,22 +960,11 @@
                 <tag>WhiteLight2</tag>
                 <active>false</active>
                 <id>32</id>
+                <guid>10291847714386910264</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>31</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPointLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </color>
-                            <intensity>1</intensity>
-                            <constant>0</constant>
-                            <linear>0</linear>
-                            <quadratic>0.1</quadratic>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -938,16 +986,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Light 2</name>
-                <tag>WhiteLight2</tag>
-                <active>true</active>
-                <id>33</id>
-                <parent>31</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
@@ -962,6 +1000,19 @@
                             <quadratic>0.1</quadratic>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Light 2</name>
+                <tag>WhiteLight2</tag>
+                <active>true</active>
+                <id>33</id>
+                <guid>6192700031267981836</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>31</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -983,16 +1034,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Light 3</name>
-                <tag>WhiteLight1</tag>
-                <active>true</active>
-                <id>34</id>
-                <parent>31</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
@@ -1007,6 +1048,19 @@
                             <quadratic>0.1</quadratic>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Light 3</name>
+                <tag>WhiteLight1</tag>
+                <active>true</active>
+                <id>34</id>
+                <guid>3930538931027483377</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>31</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -1028,16 +1082,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Light 4</name>
-                <tag>WhiteLight2</tag>
-                <active>false</active>
-                <id>35</id>
-                <parent>31</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
@@ -1052,6 +1096,19 @@
                             <quadratic>0.1</quadratic>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Light 4</name>
+                <tag>WhiteLight2</tag>
+                <active>false</active>
+                <id>35</id>
+                <guid>4274792496569485760</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>31</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -1073,16 +1130,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Light 5</name>
-                <tag>WhiteLight1</tag>
-                <active>true</active>
-                <id>36</id>
-                <parent>31</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
@@ -1097,6 +1144,19 @@
                             <quadratic>0.1</quadratic>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Light 5</name>
+                <tag>WhiteLight1</tag>
+                <active>true</active>
+                <id>36</id>
+                <guid>220853699887864385</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>31</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -1118,6 +1178,20 @@
                             </scale>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CPointLight</type>
+                        <data>
+                            <color>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </color>
+                            <intensity>1</intensity>
+                            <constant>0</constant>
+                            <linear>0</linear>
+                            <quadratic>0.1</quadratic>
+                        </data>
+                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -1126,22 +1200,11 @@
                 <tag>WhiteLight2</tag>
                 <active>false</active>
                 <id>37</id>
+                <guid>2253655993636736645</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>31</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPointLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </color>
-                            <intensity>1</intensity>
-                            <constant>0</constant>
-                            <linear>0</linear>
-                            <quadratic>0.1</quadratic>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -1163,16 +1226,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Light 7</name>
-                <tag>WhiteLight1</tag>
-                <active>false</active>
-                <id>38</id>
-                <parent>31</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
@@ -1187,6 +1240,19 @@
                             <quadratic>0.1</quadratic>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Light 7</name>
+                <tag>WhiteLight1</tag>
+                <active>false</active>
+                <id>38</id>
+                <guid>15746159308220210359</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>31</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -1208,6 +1274,20 @@
                             </scale>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CPointLight</type>
+                        <data>
+                            <color>
+                                <x>1</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </color>
+                            <intensity>1</intensity>
+                            <constant>0</constant>
+                            <linear>0</linear>
+                            <quadratic>0.1</quadratic>
+                        </data>
+                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -1216,31 +1296,11 @@
                 <tag>Player</tag>
                 <active>true</active>
                 <id>40</id>
+                <guid>6958631270631845615</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>0</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPhysicalCapsule</type>
-                        <data>
-                            <is_trigger>false</is_trigger>
-                            <is_kinematic>false</is_kinematic>
-                            <bounciness>0</bounciness>
-                            <mass>1</mass>
-                            <friction>0</friction>
-                            <linear_factor>
-                                <x>1</x>
-                                <y>0.2</y>
-                                <z>1</z>
-                            </linear_factor>
-                            <angular_factor>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </angular_factor>
-                            <collision_mode>0</collision_mode>
-                            <radius>1</radius>
-                            <height>3</height>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -1262,6 +1322,29 @@
                             </scale>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CPhysicalCapsule</type>
+                        <data>
+                            <is_trigger>false</is_trigger>
+                            <is_kinematic>false</is_kinematic>
+                            <bounciness>0</bounciness>
+                            <mass>1</mass>
+                            <friction>0</friction>
+                            <linear_factor>
+                                <x>1</x>
+                                <y>0.050000001</y>
+                                <z>1</z>
+                            </linear_factor>
+                            <angular_factor>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </angular_factor>
+                            <collision_mode>1</collision_mode>
+                            <radius>1</radius>
+                            <height>3</height>
+                        </data>
+                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -1270,8 +1353,32 @@
                 <tag></tag>
                 <active>true</active>
                 <id>41</id>
+                <guid>18160950886680682173</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>42</parent>
                 <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>0</x>
+                                <y>-0.48699999</y>
+                                <z>20.268</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                                <w>1</w>
+                            </rotation>
+                            <scale>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </scale>
+                        </data>
+                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CPhysicalBox</type>
                         <data>
@@ -1298,27 +1405,6 @@
                             </size>
                         </data>
                     </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>0</x>
-                                <y>-0.48699999</y>
-                                <z>20.268</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </scale>
-                        </data>
-                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -1327,6 +1413,9 @@
                 <tag></tag>
                 <active>true</active>
                 <id>42</id>
+                <guid>5509905032578700705</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>47</parent>
                 <components>
                     <component>
@@ -1358,34 +1447,11 @@
                 <tag></tag>
                 <active>true</active>
                 <id>43</id>
+                <guid>14923172093357934205</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>42</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPhysicalBox</type>
-                        <data>
-                            <is_trigger>false</is_trigger>
-                            <is_kinematic>true</is_kinematic>
-                            <bounciness>0</bounciness>
-                            <mass>1</mass>
-                            <friction>0.5</friction>
-                            <linear_factor>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </linear_factor>
-                            <angular_factor>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </angular_factor>
-                            <collision_mode>0</collision_mode>
-                            <size>
-                                <x>9.3999996</x>
-                                <y>1</y>
-                                <z>26</z>
-                            </size>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -1407,16 +1473,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Right Wall</name>
-                <tag></tag>
-                <active>true</active>
-                <id>44</id>
-                <parent>42</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPhysicalBox</type>
                         <data>
@@ -1443,6 +1499,19 @@
                             </size>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Right Wall</name>
+                <tag></tag>
+                <active>true</active>
+                <id>44</id>
+                <guid>9868718216486098069</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>42</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -1464,16 +1533,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Door 1</name>
-                <tag></tag>
-                <active>true</active>
-                <id>45</id>
-                <parent>42</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPhysicalBox</type>
                         <data>
@@ -1494,12 +1553,25 @@
                             </angular_factor>
                             <collision_mode>0</collision_mode>
                             <size>
-                                <x>7.9000001</x>
-                                <y>6.5999999</y>
-                                <z>0.5</z>
+                                <x>9.3999996</x>
+                                <y>1</y>
+                                <z>26</z>
                             </size>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Door 1</name>
+                <tag></tag>
+                <active>true</active>
+                <id>45</id>
+                <guid>2768776662742910589</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>42</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -1521,16 +1593,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Door 2</name>
-                <tag></tag>
-                <active>true</active>
-                <id>46</id>
-                <parent>42</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPhysicalBox</type>
                         <data>
@@ -1557,6 +1619,19 @@
                             </size>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Door 2</name>
+                <tag></tag>
+                <active>true</active>
+                <id>46</id>
+                <guid>7522754172551197706</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>42</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -1578,6 +1653,32 @@
                             </scale>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CPhysicalBox</type>
+                        <data>
+                            <is_trigger>false</is_trigger>
+                            <is_kinematic>true</is_kinematic>
+                            <bounciness>0</bounciness>
+                            <mass>1</mass>
+                            <friction>0.5</friction>
+                            <linear_factor>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </linear_factor>
+                            <angular_factor>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </angular_factor>
+                            <collision_mode>0</collision_mode>
+                            <size>
+                                <x>7.9000001</x>
+                                <y>6.5999999</y>
+                                <z>0.5</z>
+                            </size>
+                        </data>
+                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -1586,6 +1687,9 @@
                 <tag></tag>
                 <active>true</active>
                 <id>47</id>
+                <guid>14830415993384361849</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>0</parent>
                 <components>
                     <component>
@@ -1617,6 +1721,9 @@
                 <tag></tag>
                 <active>true</active>
                 <id>49</id>
+                <guid>9452482709322051288</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>0</parent>
                 <components>
                     <component>
@@ -1643,7 +1750,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Managers_CinematicManager</type>
+                        <type>Scripts/Managers_CinematicManager.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -1653,21 +1760,11 @@
                 <tag></tag>
                 <active>true</active>
                 <id>50</id>
+                <guid>3090942720354027787</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>0</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CAudioSource</type>
-                        <data>
-                            <autoplay>true</autoplay>
-                            <spatial>false</spatial>
-                            <volume>0.30000001</volume>
-                            <pan>0</pan>
-                            <looped>false</looped>
-                            <pitch>1</pitch>
-                            <attenuation_threshold>1</attenuation_threshold>
-                            <audio_clip>Sounds\Cargo_Ambient.ogg</audio_clip>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -1689,6 +1786,19 @@
                             </scale>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CAudioSource</type>
+                        <data>
+                            <autoplay>true</autoplay>
+                            <spatial>false</spatial>
+                            <volume>0.30000001</volume>
+                            <pan>0</pan>
+                            <looped>false</looped>
+                            <pitch>1</pitch>
+                            <attenuation_threshold>1</attenuation_threshold>
+                            <audio_clip>Sounds\Cargo_Ambient.ogg</audio_clip>
+                        </data>
+                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -1697,22 +1807,11 @@
                 <tag></tag>
                 <active>true</active>
                 <id>52</id>
+                <guid>10028284418799849791</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>0</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPointLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </color>
-                            <intensity>1</intensity>
-                            <constant>0</constant>
-                            <linear>0</linear>
-                            <quadratic>1</quadratic>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -1734,6 +1833,20 @@
                             </scale>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CPointLight</type>
+                        <data>
+                            <color>
+                                <x>1</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </color>
+                            <intensity>1</intensity>
+                            <constant>0</constant>
+                            <linear>0</linear>
+                            <quadratic>1</quadratic>
+                        </data>
+                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -1742,29 +1855,11 @@
                 <tag></tag>
                 <active>false</active>
                 <id>53</id>
+                <guid>12423593813385999098</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>3</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CModelRenderer</type>
-                        <data>
-                            <model>:Models\Cube.fbx</model>
-                            <frustum_behaviour>0</frustum_behaviour>
-                            <custom_bounding_sphere_position>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </custom_bounding_sphere_position>
-                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>UI\UI_CameraWhiteFade.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -1786,29 +1881,11 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Smoke 1</name>
-                <tag></tag>
-                <active>true</active>
-                <id>54</id>
-                <parent>58</parent>
-                <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>Materials\FX\Smoke.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
-                            <model>Models\Primitives\vplane.fbx</model>
-                            <frustum_behaviour>1</frustum_behaviour>
+                            <model>:Models\Cube.fbx</model>
+                            <frustum_behaviour>0</frustum_behaviour>
                             <custom_bounding_sphere_position>
                                 <x>0</x>
                                 <y>0</y>
@@ -1817,6 +1894,28 @@
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>UI\UI_CameraWhiteFade.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
+                        </data>
+                    </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Smoke 1</name>
+                <tag></tag>
+                <active>true</active>
+                <id>54</id>
+                <guid>17474999806762718818</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>58</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -1838,16 +1937,15 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Ambient Smoke</name>
-                <tag></tag>
-                <active>true</active>
-                <id>55</id>
-                <parent>58</parent>
-                <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>Materials\FX\Smoke.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
+                        </data>
+                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
@@ -1861,14 +1959,19 @@
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
                         </data>
                     </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>Materials\FX\Ambient Smoke.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Ambient Smoke</name>
+                <tag></tag>
+                <active>true</active>
+                <id>55</id>
+                <guid>5806047534820248699</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>58</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -1890,16 +1993,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Smoke 2</name>
-                <tag></tag>
-                <active>true</active>
-                <id>56</id>
-                <parent>58</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
@@ -1917,10 +2010,24 @@
                         <type>class OvCore::ECS::Components::CMaterialRenderer</type>
                         <data>
                             <materials>
-                                <material>Materials\FX\Smoke.ovmat</material>
+                                <material>Materials\FX\Ambient Smoke.ovmat</material>
                             </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Smoke 2</name>
+                <tag></tag>
+                <active>true</active>
+                <id>56</id>
+                <guid>12711949895813968298</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>58</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -1942,24 +2049,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Thin Smoke</name>
-                <tag></tag>
-                <active>true</active>
-                <id>57</id>
-                <parent>58</parent>
-                <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>Materials\FX\Thin Smoke.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
@@ -1973,6 +2062,28 @@
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>Materials\FX\Smoke.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
+                        </data>
+                    </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Thin Smoke</name>
+                <tag></tag>
+                <active>true</active>
+                <id>57</id>
+                <guid>711224755300775196</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>58</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -1994,6 +2105,28 @@
                             </scale>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>Materials\FX\Thin Smoke.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CModelRenderer</type>
+                        <data>
+                            <model>Models\Primitives\vplane.fbx</model>
+                            <frustum_behaviour>1</frustum_behaviour>
+                            <custom_bounding_sphere_position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </custom_bounding_sphere_position>
+                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -2002,6 +2135,9 @@
                 <tag></tag>
                 <active>true</active>
                 <id>58</id>
+                <guid>8789150117112091492</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>4</parent>
                 <components>
                     <component>
@@ -2033,6 +2169,9 @@
                 <tag></tag>
                 <active>true</active>
                 <id>59</id>
+                <guid>5093418996116635024</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>0</parent>
                 <components>
                     <component>
@@ -2059,7 +2198,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Managers_CameraFade</type>
+                        <type>Scripts/Managers_CameraFade.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -2069,14 +2208,39 @@
                 <tag></tag>
                 <active>false</active>
                 <id>60</id>
+                <guid>12865947530144565554</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>3</parent>
                 <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                                <w>1</w>
+                            </rotation>
+                            <scale>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </scale>
+                        </data>
+                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CMaterialRenderer</type>
                         <data>
                             <materials>
                                 <material>UI\UI_CameraBlackFade.ovmat</material>
                             </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -2092,27 +2256,6 @@
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
                         </data>
                     </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </scale>
-                        </data>
-                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -2121,40 +2264,17 @@
                 <tag></tag>
                 <active>true</active>
                 <id>63</id>
+                <guid>13653667800244586739</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>42</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPhysicalBox</type>
-                        <data>
-                            <is_trigger>false</is_trigger>
-                            <is_kinematic>true</is_kinematic>
-                            <bounciness>0</bounciness>
-                            <mass>1</mass>
-                            <friction>0.5</friction>
-                            <linear_factor>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </linear_factor>
-                            <angular_factor>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </angular_factor>
-                            <collision_mode>0</collision_mode>
-                            <size>
-                                <x>5</x>
-                                <y>0.5</y>
-                                <z>26.700001</z>
-                            </size>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
                             <position>
                                 <x>0</x>
-                                <y>9.8129997</y>
+                                <y>10.580213</y>
                                 <z>20.268</z>
                             </position>
                             <rotation>
@@ -2170,16 +2290,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Top Left Wall</name>
-                <tag></tag>
-                <active>true</active>
-                <id>64</id>
-                <parent>42</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPhysicalBox</type>
                         <data>
@@ -2198,14 +2308,27 @@
                                 <y>1</y>
                                 <z>1</z>
                             </angular_factor>
-                            <collision_mode>0</collision_mode>
+                            <collision_mode>1</collision_mode>
                             <size>
-                                <x>3</x>
-                                <y>1</y>
-                                <z>26</z>
+                                <x>5</x>
+                                <y>1.4</y>
+                                <z>26.700001</z>
                             </size>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Top Left Wall</name>
+                <tag></tag>
+                <active>true</active>
+                <id>64</id>
+                <guid>6763467086585321976</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>42</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -2227,16 +2350,6 @@
                             </scale>
                         </data>
                     </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Top Right Wall</name>
-                <tag></tag>
-                <active>true</active>
-                <id>65</id>
-                <parent>42</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPhysicalBox</type>
                         <data>
@@ -2263,6 +2376,19 @@
                             </size>
                         </data>
                     </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Top Right Wall</name>
+                <tag></tag>
+                <active>true</active>
+                <id>65</id>
+                <guid>1051852898585353847</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
+                <parent>42</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -2282,6 +2408,32 @@
                                 <y>1</y>
                                 <z>1</z>
                             </scale>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CPhysicalBox</type>
+                        <data>
+                            <is_trigger>false</is_trigger>
+                            <is_kinematic>true</is_kinematic>
+                            <bounciness>0</bounciness>
+                            <mass>1</mass>
+                            <friction>0.5</friction>
+                            <linear_factor>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </linear_factor>
+                            <angular_factor>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </angular_factor>
+                            <collision_mode>0</collision_mode>
+                            <size>
+                                <x>3</x>
+                                <y>1</y>
+                                <z>26</z>
+                            </size>
                         </data>
                     </component>
                 </components>

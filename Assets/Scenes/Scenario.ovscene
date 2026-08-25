@@ -332,7 +332,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Managers_CameraFade</type>
+                        <type>Scripts/Managers_CameraFade.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -368,7 +368,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Managers_ScenarioManager</type>
+                        <type>Scripts/Managers_ScenarioManager.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>

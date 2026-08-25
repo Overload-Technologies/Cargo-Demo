@@ -74,11 +74,11 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_Grabber</type>
+                        <type>Scripts/Gameplay_Grabber.lua</type>
                         <data/>
                     </behaviour>
                     <behaviour>
-                        <type>Animation_Shake</type>
+                        <type>Scripts/Animation_Shake.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -932,11 +932,11 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Sound_Footsteps</type>
+                        <type>Scripts/Sound_Footsteps.lua</type>
                         <data/>
                     </behaviour>
                     <behaviour>
-                        <type>Controller_FPSController</type>
+                        <type>Scripts/Controller_FPSController.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -6757,7 +6757,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_Door</type>
+                        <type>Scripts/Animation_Door.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -7406,7 +7406,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_Door</type>
+                        <type>Scripts/Animation_Door.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -7538,11 +7538,11 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_DoorTrigger</type>
+                        <type>Scripts/Gameplay_DoorTrigger.lua</type>
                         <data/>
                     </behaviour>
                     <behaviour>
-                        <type>Sound_DoorSound</type>
+                        <type>Scripts/Sound_DoorSound.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -7686,7 +7686,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_Door</type>
+                        <type>Scripts/Animation_Door.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -7779,7 +7779,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_Door</type>
+                        <type>Scripts/Animation_Door.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -7980,7 +7980,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_Door</type>
+                        <type>Scripts/Animation_Door.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -8629,7 +8629,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_Door</type>
+                        <type>Scripts/Animation_Door.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -8815,11 +8815,11 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_DoorTrigger</type>
+                        <type>Scripts/Gameplay_DoorTrigger.lua</type>
                         <data/>
                     </behaviour>
                     <behaviour>
-                        <type>Sound_DoorSound</type>
+                        <type>Scripts/Sound_DoorSound.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -8868,7 +8868,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_FinalGateEnigma</type>
+                        <type>Scripts/Gameplay_FinalGateEnigma.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -8927,7 +8927,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_Door</type>
+                        <type>Scripts/Animation_Door.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -9576,7 +9576,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_Door</type>
+                        <type>Scripts/Animation_Door.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -9780,7 +9780,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_EnigmaDoorTrigger</type>
+                        <type>Scripts/Gameplay_EnigmaDoorTrigger.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -9927,7 +9927,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_LightCubeSlot</type>
+                        <type>Scripts/Gameplay_LightCubeSlot.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -10110,11 +10110,11 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_Grabbable</type>
+                        <type>Scripts/Gameplay_Grabbable.lua</type>
                         <data/>
                     </behaviour>
                     <behaviour>
-                        <type>Gameplay_RespawnOnFall</type>
+                        <type>Scripts/Gameplay_RespawnOnFall.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -10212,11 +10212,11 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_Grabbable</type>
+                        <type>Scripts/Gameplay_Grabbable.lua</type>
                         <data/>
                     </behaviour>
                     <behaviour>
-                        <type>Gameplay_RespawnOnFall</type>
+                        <type>Scripts/Gameplay_RespawnOnFall.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -10397,7 +10397,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Sound_DoorSound</type>
+                        <type>Scripts/Sound_DoorSound.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -10468,7 +10468,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_FanRotation</type>
+                        <type>Scripts/Animation_FanRotation.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -10539,7 +10539,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_FanRotation</type>
+                        <type>Scripts/Animation_FanRotation.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -10614,15 +10614,15 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_Grabbable</type>
+                        <type>Scripts/Gameplay_Grabbable.lua</type>
                         <data/>
                     </behaviour>
                     <behaviour>
-                        <type>Gameplay_RespawnOnFall</type>
+                        <type>Scripts/Gameplay_RespawnOnFall.lua</type>
                         <data/>
                     </behaviour>
                     <behaviour>
-                        <type>Sound_MetalBox</type>
+                        <type>Scripts/Sound_MetalBox.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -10773,11 +10773,11 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_Grabbable</type>
+                        <type>Scripts/Gameplay_Grabbable.lua</type>
                         <data/>
                     </behaviour>
                     <behaviour>
-                        <type>Gameplay_RespawnOnFall</type>
+                        <type>Scripts/Gameplay_RespawnOnFall.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -10883,15 +10883,15 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_Grabbable</type>
+                        <type>Scripts/Gameplay_Grabbable.lua</type>
                         <data/>
                     </behaviour>
                     <behaviour>
-                        <type>Gameplay_RespawnOnFall</type>
+                        <type>Scripts/Gameplay_RespawnOnFall.lua</type>
                         <data/>
                     </behaviour>
                     <behaviour>
-                        <type>Sound_MetalBox</type>
+                        <type>Scripts/Sound_MetalBox.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -11019,15 +11019,15 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_Grabbable</type>
+                        <type>Scripts/Gameplay_Grabbable.lua</type>
                         <data/>
                     </behaviour>
                     <behaviour>
-                        <type>Gameplay_RespawnOnFall</type>
+                        <type>Scripts/Gameplay_RespawnOnFall.lua</type>
                         <data/>
                     </behaviour>
                     <behaviour>
-                        <type>Sound_MetalBox</type>
+                        <type>Scripts/Sound_MetalBox.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -11201,7 +11201,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_PickupRotation</type>
+                        <type>Scripts/Animation_PickupRotation.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -11259,7 +11259,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_GunPickup</type>
+                        <type>Scripts/Gameplay_GunPickup.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -11295,7 +11295,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>UserInterface_Manager</type>
+                        <type>Scripts/UserInterface_Manager.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -11420,7 +11420,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_Shake</type>
+                        <type>Scripts/Animation_Shake.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -11513,11 +11513,11 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_Grabbable</type>
+                        <type>Scripts/Gameplay_Grabbable.lua</type>
                         <data/>
                     </behaviour>
                     <behaviour>
-                        <type>Sound_ElectricHit</type>
+                        <type>Scripts/Sound_ElectricHit.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -11575,7 +11575,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_Shake</type>
+                        <type>Scripts/Animation_Shake.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -11638,7 +11638,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_BallRecall</type>
+                        <type>Scripts/Gameplay_BallRecall.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -11713,7 +11713,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_LavaPlatform</type>
+                        <type>Scripts/Animation_LavaPlatform.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -11788,7 +11788,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_EnergyTarget</type>
+                        <type>Scripts/Gameplay_EnergyTarget.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -11881,7 +11881,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Sound_ElectricShot</type>
+                        <type>Scripts/Sound_ElectricShot.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -12356,7 +12356,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Physics_OutOfCargoTrigger</type>
+                        <type>Scripts/Physics_OutOfCargoTrigger.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -12525,7 +12525,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_CargoCrashLight</type>
+                        <type>Scripts/Animation_CargoCrashLight.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -12659,7 +12659,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Managers_CameraFade</type>
+                        <type>Scripts/Managers_CameraFade.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -12761,7 +12761,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Sound_BreathAttenuation</type>
+                        <type>Scripts/Sound_BreathAttenuation.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -12957,7 +12957,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_AlienBall</type>
+                        <type>Scripts/Animation_AlienBall.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -13077,7 +13077,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Managers_GameManager</type>
+                        <type>Scripts/Managers_GameManager.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -13289,7 +13289,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_Shake</type>
+                        <type>Scripts/Animation_Shake.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -13652,7 +13652,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_HeadBob</type>
+                        <type>Scripts/Animation_HeadBob.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -13714,7 +13714,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_LevelEnd</type>
+                        <type>Scripts/Gameplay_LevelEnd.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -13892,15 +13892,15 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_Grabbable</type>
+                        <type>Scripts/Gameplay_Grabbable.lua</type>
                         <data/>
                     </behaviour>
                     <behaviour>
-                        <type>Gameplay_Wearable</type>
+                        <type>Scripts/Gameplay_Wearable.lua</type>
                         <data/>
                     </behaviour>
                     <behaviour>
-                        <type>Sound_MetalBox</type>
+                        <type>Scripts/Sound_MetalBox.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -13990,7 +13990,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Gameplay_KeyColor</type>
+                        <type>Scripts/Gameplay_KeyColor.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -14287,7 +14287,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_AlienBall</type>
+                        <type>Scripts/Animation_AlienBall.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -14444,7 +14444,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_DroidRedLight</type>
+                        <type>Scripts/Animation_DroidRedLight.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -14493,11 +14493,11 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_Shake</type>
+                        <type>Scripts/Animation_Shake.lua</type>
                         <data/>
                     </behaviour>
                     <behaviour>
-                        <type>Animation_DroidShake</type>
+                        <type>Scripts/Animation_DroidShake.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -15086,7 +15086,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_AlienBall</type>
+                        <type>Scripts/Animation_AlienBall.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -15366,7 +15366,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_AlienBall</type>
+                        <type>Scripts/Animation_AlienBall.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -15615,7 +15615,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_AlienBall</type>
+                        <type>Scripts/Animation_AlienBall.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -15864,7 +15864,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_AlienBall</type>
+                        <type>Scripts/Animation_AlienBall.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -16113,7 +16113,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_AlienBall</type>
+                        <type>Scripts/Animation_AlienBall.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -16362,7 +16362,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_AlienBall</type>
+                        <type>Scripts/Animation_AlienBall.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -16496,7 +16496,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_Gun</type>
+                        <type>Scripts/Animation_Gun.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -16554,7 +16554,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_LowBattery</type>
+                        <type>Scripts/Animation_LowBattery.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -16657,7 +16657,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Animation_EnergyTankLight</type>
+                        <type>Scripts/Animation_EnergyTankLight.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
