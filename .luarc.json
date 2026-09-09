@@ -1,5 +1,5 @@
 {
-  "workspace.library": ["/home/adrien/Downloads/Overload-1.9-linux_x64/Data/Engine"],
+  "workspace.library": ["/home/adrien/GitHub/Overload/Build/Debug/Data/Engine"],
   "runtime.version": "Lua 5.4",
   "runtime.builtin": {
     "basic": "enable",
